@@ -1,0 +1,29 @@
+/* style.module.css */
+.slider {
+    
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .move {
+    display: flex;
+    width: calc(250px * 16); /* Se ajusta dependiendo de la cantidad de logos */
+    animation: animacion 7s linear infinite;
+  }
+  
+  @keyframes animacion {
+    0% {
+      transform: translateX(0);
+      
+    }
+    100% {
+      transform: translateX(calc(-250px * 5)); /* Mueve el slider hacia la izquierda */
+    }
+  }
+  
+  .box {
+    height: 100px;
+    width: 250px;
+  }
+  
